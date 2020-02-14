@@ -137,7 +137,6 @@ for i in range(len(x_obs)):
     y_test=np.append(y_test,model_A(x_obs[i],params[i]))
     x_test=np.append(x_test,x_obs[i])
 
-plt.title((r"BIC= {:.2f}".format(loglikeA)))
 plt.plot(x_test,y_test,'-o',linestyle='None')
 
 
